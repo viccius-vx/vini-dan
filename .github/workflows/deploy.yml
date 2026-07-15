@@ -1,4 +1,4 @@
-name: Deploy via FTP
+﻿name: Deploy via FTP
 
 on:
   push:
@@ -18,8 +18,9 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
-          server-dir: public/
+          server-dir: ./
           exclude: |
             **/.git*
             **/.git*/**
             .github/**
+
