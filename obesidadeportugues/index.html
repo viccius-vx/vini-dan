@@ -1,0 +1,1033 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guia De Saúde Para Pessoas com Obesidade</title>
+
+<!-- UTMify Tracker -->
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+
+<!-- UTMify Pixel -->
+<script>
+  window.pixelId = "6a235032bef30f331a4be335";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+<link href="data:," rel="icon"/>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary: #3B402C; /* Very dark navy blue */
+    --bg-dark: #3B402C;
+    --bg-darker: #23271A;
+    --red-alert: #ef4444; 
+    --red-alert-dark: #b91c1c;
+    --text-main: #f8fafc; /* White/very light gray for dark bg */
+    --text-muted: #cbd5e1;
+    --bg-light: #ffffff; /* For cards/testimonials */
+    --accent-gold: #f59e0b;
+    --accent-gold-hover: #d97706;
+    --green-check: #22c55e;
+    --dark: #3B402C;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Extremely readable body text */
+    color: var(--text-main);
+    background-color: var(--bg-dark);
+    line-height: 1.65;
+    font-size: 1.15rem; /* Standardizing easy-to-read body size */
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center { text-align: center; }
+.text-primary { color: var(--text-main); }
+.font-heading { font-family: 'Montserrat', sans-serif; }
+.bold { font-weight: 700; }
+.italic { font-style: italic; }
+.mt-1 { margin-top: 1.5rem; }
+.mt-2 { margin-top: 2.5rem; }
+.mt-3 { margin-top: 4rem; }
+.mb-1 { margin-bottom: 1.5rem; }
+.mb-2 { margin-bottom: 2.5rem; }
+.hidden { display: none !important; }
+
+/* ================== STICKY COUNTDOWN ================== */
+.top-warning-bar {
+    background-color: var(--red-alert);
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 1.15rem;
+    font-weight: 800;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    letter-spacing: 0.5px;
+}
+
+.warning-text {
+    margin-bottom: 6px;
+    display: block;
+}
+
+.countdown-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.time-unit {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-label {
+    font-size: 0.75rem;
+    margin-top: 4px;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.time-card {
+    background: #fff;
+    color: #000;
+    font-weight: 900;
+    font-size: 1.4rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
+}
+
+.time-sep {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: -18px; /* Offset to center vertically with numbers */
+}
+
+/* ================== HERO / HEADLINE ================== */
+.hero-section {
+    background-color: var(--bg-dark);
+    padding: 4rem 0 3rem;
+}
+
+.main-headline {
+    font-size: 2.8rem;
+    line-height: 1.25;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.sub-headline {
+    font-size: 1.25rem;
+    color: #cbd5e1;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    font-weight: 400;
+}
+
+.hero-main-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    display: block;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* ================== BUY 1 GET 3 ================== */
+.b1g3-title {
+    font-size: 2.3rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.b1g3-subtitle {
+    font-size: 1.25rem;
+    color: #f8fafc;
+    margin-bottom: 2rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.b1g3-image-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.b1g3-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.b1g3-prices {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0 10%;
+}
+
+.b1g3-price-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.b1g3-price-strikethrough {
+    color: var(--accent-gold);
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.b1g3-price-final {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .b1g3-title { font-size: 1.9rem; }
+    .b1g3-subtitle { font-size: 1.15rem; margin-bottom: 1.5rem; }
+    .b1g3-prices { padding: 0 4%; }
+    .b1g3-price-strikethrough { font-size: 1.05rem; }
+    .b1g3-price-final { font-size: 1.35rem; }
+}
+
+/* ================== CALL TO ACTION BOX ================== */
+.cta-box {
+    background: transparent;
+    padding: 1.5rem 0;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-box h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+.star-rating {
+    color: var(--accent-gold);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.price-container {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-container .current-price {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.price-container .savings {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    margin-top: 0.5rem;
+}
+
+.price-container .savings s {
+    color: var(--red-alert);
+}
+
+.price-container .savings strong {
+    color: #ffffff;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.btn-buy-now {
+    display: block;
+    width: 100%;
+    background-color: var(--accent-gold);
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.25rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(245, 158, 11, 0.4);
+    transition: all 0.2s ease;
+    border: 3px solid #b45309;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.btn-buy-now:hover {
+    background-color: #fbbf24;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(245, 158, 11, 0.6);
+}
+
+.guarantee-text {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* ================== DEAL INFO SECTIONS ================== */
+.text-section {
+    padding: 4rem 0;
+    background-color: var(--bg-dark);
+}
+
+.text-section h2 {
+    color: #ffffff;
+}
+
+.text-section p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #cbd5e1;
+}
+
+.divider {
+    height: 1px;
+    background: #334155;
+    max-width: 60%;
+    margin: 3rem auto;
+}
+
+/* ================== HTML BENEFITS CHECKLIST ================== */
+.benefits-section {
+    padding: 4rem 0;
+    background-color: var(--bg-dark);
+}
+
+.benefits-list {
+    list-style: none;
+    max-width: 750px;
+    margin: 2rem auto;
+}
+
+.benefits-list li {
+    font-size: 1.2rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #334155;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    color: #f8fafc;
+}
+
+.benefits-list li:last-child {
+    border-bottom: none;
+}
+
+.benefits-list li i {
+    color: var(--green-check);
+    font-size: 1.6rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* ================== BUNDLE SECTION ================== */
+.bundle-section {
+    padding: 4rem 0;
+    background-color: var(--bg-dark);
+    color: #fff;
+    text-align: center;
+}
+
+.bundle-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.bundle-image {
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+    display: block;
+}
+
+/* ================== TESTIMONIALS ================== */
+.testimonials-section {
+    padding: 4rem 0;
+    background: var(--bg-dark);
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 650px;
+    margin: 0 auto 2rem;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5);
+    color: var(--dark);
+    text-align: left;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #cbd5e1;
+}
+
+.testimonial-author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-name {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--dark);
+}
+
+.verified-buyer {
+    font-size: 0.85rem;
+    color: var(--green-check);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.testimonial-stars {
+    color: var(--accent-gold);
+    display: flex;
+    margin-bottom: 0.75rem;
+}
+
+.testimonial-title {
+    font-weight: 800;
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* ================== EXTRA SALES SECTIONS ================== */
+.huge-offer-banner {
+    background-color: var(--bg-dark); 
+    padding: 3rem 1rem;
+    text-align: center;
+    border-top: none; 
+    border-bottom: none;
+}
+
+.huge-offer-title {
+    font-size: 9rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -2px;
+}
+
+.huge-offer-subtitle {
+    font-size: 4.5rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    letter-spacing: -1px;
+}
+
+.transform-section {
+    position: relative;
+    padding: 3rem 20px;
+    background-color: var(--bg-dark);
+    /* In a real scenario, you can add the sunset background image here:
+       background-image: url('images/sunset-bg.jpg');
+       background-size: cover;
+       background-position: center;
+       background-blend-mode: overlay;
+    */
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.transform-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #ffc107;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    margin-bottom: 2rem;
+    line-height: 1.15;
+}
+
+.transform-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.transform-image-wrapper {
+    flex: 1;
+    max-width: 500px;
+}
+
+.transform-image-wrapper img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.transform-benefits {
+    flex: 1;
+    list-style: none;
+}
+
+.transform-benefits li {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.transform-benefits li::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #b91c1c;
+    border-radius: 50%;
+    margin-top: 8px;
+    box-shadow: inset -2px -2px 4px rgba(0,0,0,0.5);
+    flex-shrink: 0;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-section, .text-section, .benefits-section, .bundle-section, .testimonials-section {
+        padding: 0.8rem 0 !important;
+    }
+
+    .divider {
+        margin: 1.5rem auto !important;
+    }
+
+    /* Decrease explicit utility margins on mobile */
+    .mt-1 { margin-top: 1rem !important; }
+    .mt-2 { margin-top: 1.5rem !important; }
+    .mt-3 { margin-top: 2rem !important; }
+    .mb-1 { margin-bottom: 1rem !important; }
+    .mb-2 { margin-bottom: 1.5rem !important; }
+    
+    .top-warning-bar {
+        padding: 10px;
+    }
+    .warning-text {
+        font-size: clamp(0.9rem, 4vw, 1.1rem);
+        line-height: 1.3;
+        margin-bottom: 4px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    .time-card {
+        font-size: 1.1rem;
+        padding: 4px 10px;
+    }
+    .time-sep {
+        font-size: 1.1rem;
+        margin-top: -14px;
+    }
+    .time-label {
+        font-size: 0.65rem;
+    }
+
+    .main-headline {
+        font-size: clamp(1.4rem, 6.5vw, 2.1rem);
+        line-height: 1.25;
+        margin-bottom: 1.2rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    
+    .sub-headline {
+        font-size: 1.1rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    
+    .price-container .current-price {
+        font-size: 3.2rem;
+    }
+    
+    .btn-buy-now {
+        font-size: 1.4rem;
+        padding: 1.2rem 1rem;
+    }
+    
+    .text-section p, .benefits-list li {
+        font-size: 1.15rem;
+    }
+    
+    .bundle-section h2 {
+        font-size: 2.2rem;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+    
+    .huge-offer-banner {
+        padding: 1rem 1rem;
+    }
+    
+    .huge-offer-title {
+        font-size: clamp(2rem, 10vw, 4rem);
+        line-height: 1.1;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    
+    .huge-offer-subtitle {
+        font-size: clamp(1.3rem, 5vw, 1.8rem);
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    
+    .transform-title {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .transform-image-wrapper {
+        width: 100%;
+        margin-bottom: -1rem;
+    }
+
+    .transform-image-wrapper img {
+        width: 100%;
+        max-width: 100%;
+        transform: scale(1.05); /* Make the image pop a bit more */
+    }
+    
+    .transform-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .transform-benefits li {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+}
+</style>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<div class="top-warning-bar">
+<div class="warning-text">⏰ ÚLTIMAS HORAS: 70% DE DESCONTO TERMINA EM</div>
+<div class="countdown-box">
+<div class="time-unit">
+<span class="time-card" id="timer-hours">00</span>
+<span class="time-label">hh</span>
+</div>
+<span class="time-sep">:</span>
+<div class="time-unit">
+<span class="time-card" id="timer-minutes">10</span>
+<span class="time-label">mm</span>
+</div>
+<span class="time-sep">:</span>
+<div class="time-unit">
+<span class="time-card" id="timer-seconds">00</span>
+<span class="time-label">ss</span>
+</div>
+</div>
+</div>
+
+<section class="hero-section text-center">
+<div class="container">
+<h1 class="main-headline font-heading bold italic text-primary">
+                Você sofre com o excesso de peso, dores e a dificuldade de se movimentar que limitam o seu dia a dia?
+            </h1>
+<p class="sub-headline">
+                Você não está sozinho e a verdade é que reduzir o peso, controlar a fome e recuperar a sua saúde pode ser <strong>simples</strong>… quando você segue um programa desenhado especificamente para as necessidades de pessoas com obesidade.
+            </p>
+
+<img alt="Guia De Saúde Para Pessoas com Obesidade" class="hero-main-image" src="img1.jpg"/>
+
+<div class="cta-box">
+<div class="star-rating">
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+</div>
+<h3>Guia De Saúde Para Pessoas com Obesidade + 2 BÔNUS</h3>
+<div class="price-container">
+<div class="current-price">19,90 €</div>
+<div class="savings">
+<s>57,90 €</s> <strong>Economize 70%</strong>
+</div>
+</div>
+<a class="btn-buy-now" href="/cart/58034069438838:1?locale=pt">
+                    COMPRAR AGORA 
+                </a>
+<div class="guarantee-text">
+<i data-lucide="shield-check" style="color: #16a34a; width: 16px;"></i>
+                    Pagamento 100% seguro • Acesso digital imediato
+                </div>
+</div>
+</div>
+</section>
+
+<section class="b1g3-section text-center" style="padding: 4rem 0 0; background-color: var(--bg-dark);">
+<div class="container">
+<h1 class="b1g3-title" style="letter-spacing: -0.5px;">COMPRE 1 LEVE 3</h1>
+<p class="b1g3-subtitle">
+                Veja o que você vai receber por tempo limitado:
+            </p>
+<div class="b1g3-image-container" style="max-width: 900px;">
+<div class="b1g3-prices" style="justify-content: center; padding: 0;">
+<img alt="Compre 1, leve 3 ofertas" class="b1g3-image" src="img2.jpg" style="width: 100%; max-width: 800px; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.4);"/>
+</div>
+</div>
+<div class="divider" style="margin-top: 3.5rem; margin-bottom: 0;"></div>
+</div>
+</section>
+
+<section class="text-section">
+<div class="container">
+<div class="text-center">
+<h2 class="font-heading bold italic" style="font-size: 2.4rem; margin-bottom: 2rem;">Por que estamos oferecendo essa oportunidade?</h2>
+</div>
+<div style="max-width: 750px; margin: 0 auto; line-height: 1.8;">
+<p>É raro que nossos três guias mais procurados sejam oferecidos juntos pelo preço de um só.</p>
+<p>O motivo é: Uma vez por ano, durante nossa campanha anual de bem-estar, reduzimos os preços de nossos materiais essenciais para ajudar o maior número possível de pessoas a aliviar suas dores e transformar suas vidas.</p>
+<p>Ao eliminar intermediários e entregar o conteúdo 100% digitalmente, evitamos enormes custos. Repassamos essa economia para você, oferecendo o pacote completo de 57,90 € por apenas 19,90 €.</p>
+<p class="bold" style="color: var(--red-alert);">Quando o evento terminar, os preços voltarão ao normal.</p>
+</div>
+<div class="divider"></div>
+<div class="text-center">
+<h2 class="font-heading bold italic text-primary" style="font-size: 2.2rem; margin-bottom: 2rem;">"Será que isso não é muito restritivo ou difícil para o meu corpo?"</h2>
+</div>
+<div style="max-width: 750px; margin: 0 auto; line-height: 1.8;">
+<p>Muitas pessoas acham que rotinas para perda de peso são restritivas demais para fazer diferença... ou muito difíceis de acompanhar sem sentir fome constante.</p>
+<p class="bold">❌ Mas isso simplesmente não é verdade.</p>
+<p>Estudos médicos comprovam que uma alimentação inteligente e exercícios adequados estão entre as estratégias mais eficazes para o tratamento da obesidade. Eles melhoram drasticamente o seu metabolismo e protegem suas articulações, permitindo que você perca peso de forma saudável sem forçar o seu corpo.</p>
+<p>É por isso que o <strong style="color:#ffffff;">Programa Saúde e Mobilidade</strong> foi criado: um sistema prático que ensina passo a passo como reduzir o peso, melhorar a sua alimentação e sentir-se mais disposto, com instruções seguras e sem extremismos.</p>
+<p>Este pacote completo elimina as dúvidas e ajuda você a passar do sedentarismo e desconforto para uma vida com saúde e leveza em seus próprios termos.</p>
+</div>
+</div>
+</section>
+
+<section class="benefits-section">
+<div class="container">
+<h2 class="text-center font-heading bold italic" style="font-size: 2.2rem; margin-bottom: 2.5rem; color: #ffffff;">
+                📚 O que exatamente você encontrará no Pacote Saúde e Mobilidade:
+            </h2>
+<ul class="benefits-list">
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Guia de saúde para pessoas com obesidade</strong> com estratégias completas para melhorar seu bem-estar diário</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Movimentos sem impacto</strong> focados em fortalecer corpos pesados com total segurança e conforto</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Receitas saciantes</strong> desenhadas para controlar a fome e nutrir o seu corpo sem restrições extremas</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Explicações claras</strong> sobre o metabolismo na obesidade e como proteger sua saúde cardiovascular</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Passo a passo prático</strong> para que qualquer pessoa, independente da idade, consiga acompanhar com segurança</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Métodos baseados em ciência</strong> para reduzir o peso e a inflamação de forma natural</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Fácil de ler e aplicar</strong>, permitindo que você comece a sentir o alívio imediatamente</span>
+</li>
+</ul>
+</div>
+</section>
+
+<section class="transform-section" style="padding: 1rem 0;">
+<div class="container">
+<div class="transform-grid text-center">
+<div class="transform-image-wrapper" style="width: 100%; max-width: 800px; margin: 0 auto;">
+<img alt="Kit Completo" src="img3.jpg" style="width: 100%; border-radius: 8px;"/>
+</div>
+</div>
+</div>
+</section>
+
+<section class="huge-offer-banner">
+<div class="container">
+<div class="huge-offer-title">70% DE DESCONTO</div>
+<div class="huge-offer-subtitle">
+                TERMINA HOJE 
+                <i data-lucide="corner-right-down" style="width: 48px; height: 48px; stroke-width: 3px;"></i>
+</div>
+</div>
+</section>
+
+<section class="bundle-section" style="padding-top: 2rem;">
+<div class="container">
+<img alt="Pacote de Guias" class="bundle-image" src="img1.jpg" style="width: 100%; max-width: 700px; margin: 0 auto;"/>
+<div class="cta-box" style="margin-top: 1rem;">
+<div class="star-rating">
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+</div>
+<h3>Guia De Saúde Para Pessoas com Obesidade + 2 BÔNUS</h3>
+<div class="price-container">
+<div class="current-price">19,90 €</div>
+<div class="savings">
+<s>57,90 €</s> <strong>Economize 70%</strong>
+</div>
+</div>
+<a class="btn-buy-now" href="/cart/58034069438838:1?locale=pt">
+                    COMPRAR AGORA 
+                </a>
+</div>
+</div>
+</section>
+
+<section class="text-section text-center">
+<div class="container">
+<div style="max-width: 800px; margin: 0 auto; line-height: 1.8;">
+<p>Proteger sua mobilidade e independência nunca foi tão acessível.</p>
+<p>Com esta coleção, você receberá todas as ferramentas necessárias para recuperar sua autoestima, fortalecer seu corpo e combater a obesidade no conforto da sua casa. No preço normal de 57,90 €, hoje você pode obter o pacote completo por apenas 19,90 €, ou seja, com <strong>70% DE DESCONTO</strong>.</p>
+<p>Não deixe passar mais um dia sofrendo com dores e limitações. Assuma o controle da sua saúde física hoje mesmo. Acesso digital imediato (após a confirmação do pagamento, você receberá acesso direto para baixar seus guias).</p>
+<div class="conversion-highlight-box" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.02)); border: 2px dashed var(--accent-gold); border-radius: 12px; padding: 2rem 1.5rem; margin: 3rem auto 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+<h3 class="font-heading bold italic" style="font-size: 2.2rem; margin-bottom: 0.8rem; color: var(--accent-gold);">
+                        Por que esperar mais um dia?
+                    </h3>
+<p style="font-size: 1.3rem; line-height: 1.6; margin-bottom: 1.5rem; color: #f8fafc; font-weight: 600;">
+<span style="font-size: 1.4rem;">👉</span> Dê ao seu corpo o cuidado, os nutrientes e o movimento revitalizante que ele tanto precisa para se sentir leve e saudável novamente.
+                    </p>
+<a class="bold italic" href="/cart/58034069438838:1?locale=pt" style="font-size: 1.5rem; color: #ffffff; background: var(--red-alert); display: inline-block; padding: 12px 24px; border-radius: 6px; box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4); text-decoration: none; width: 100%; max-width: 450px;">
+                        Garanta seus 70% de desconto antes que a oferta expire!
+                    </a>
+</div>
+</div>
+<div class="divider"></div>
+<h2 class="font-serif bold italic mt-3 mb-2" style="font-size: 2.2rem; color: #ffffff;">O que nossos clientes dizem:</h2>
+
+<div class="testimonials-grid">
+<div class="testimonial-card">
+<div class="testimonial-header">
+<div class="testimonial-author-info">
+<span class="testimonial-name">Carmen G.</span>
+<span class="verified-buyer">
+<i data-lucide="check-circle" style="width: 14px;"></i> Comprador verificado
+                            </span>
+</div>
+</div>
+<div class="testimonial-stars">
+<i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+</div>
+<div class="testimonial-title">“Gostaria de ter encontrado isso anos atrás!”</div>
+<div class="testimonial-text">“Antes de começar este programa, eu tinha dificuldade até de caminhar por causa do peso e das dores. As rotinas são muito simples, mas incrivelmente eficazes. Finalmente sinto que recuperei minha disposição e posso brincar com meus netos sem ficar exausta!”</div>
+</div>
+
+<div class="testimonial-card">
+<div class="testimonial-header">
+<div class="testimonial-author-info">
+<span class="testimonial-name">Carlos M.</span>
+<span class="verified-buyer">
+<i data-lucide="check-circle" style="width: 14px;"></i> Comprador verificado
+                            </span>
+</div>
+</div>
+<div class="testimonial-stars">
+<i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+</div>
+<div class="testimonial-title">“Melhor investimento para a minha saúde.”</div>
+<div class="testimonial-text">“Fiquei cética no início, pois já havia tentado inúmeras dietas para emagrecer, mas os guias passo a passo são surpreendentemente claros. A perda de peso e a redução do inchaço são muito perceptíveis após pouco tempo, e sem passar fome.”</div>
+</div>
+
+<div class="testimonial-card">
+<div class="testimonial-header">
+<div class="testimonial-author-info">
+<span class="testimonial-name">Ana e Manuel F.</span>
+<span class="verified-buyer">
+<i data-lucide="check-circle" style="width: 14px;"></i> Compradores verificados
+                            </span>
+</div>
+</div>
+<div class="testimonial-stars">
+<i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+</div>
+<div class="testimonial-title">“Lemos e aplicamos juntos.”</div>
+<div class="testimonial-text">“Eu comecei a usar o Guia de Saúde e as orientações são ótimas. Agora me sinto muito mais confiante no meu dia a dia, com muito menos dores nas costas e perdendo peso de forma constante. Recomendo a todos!”</div>
+</div>
+
+<div class="testimonial-card">
+<div class="testimonial-header">
+<div class="testimonial-author-info">
+<span class="testimonial-name">Laura S.</span>
+<span class="verified-buyer">
+<i data-lucide="check-circle" style="width: 14px;"></i> Comprador verificado
+                            </span>
+</div>
+</div>
+<div class="testimonial-stars">
+<i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+</div>
+<div class="testimonial-title">“Fácil de seguir e realmente muda a vida.”</div>
+<div class="testimonial-text">“Os guias são extremamente bem explicados! A diferença na minha saúde e no meu fôlego é imensa. Me sinto muito mais leve, com energia de sobra e com uma qualidade de vida muito superior.”</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer class="landing-footer" style="background: #1e293b; color: #94a3b8; text-align: center; padding: 2.5rem 1rem; font-size: 0.9rem;">
+<div class="container">
+<h4 class="font-serif bold mb-1" style="color: #cbd5e1; font-size: 1.2rem;">Guia De Saúde Para Pessoas com Obesidade</h4>
+<p>© Todos os direitos reservados.</p>
+<p style="margin-top: 1rem;">
+<a href="mailto:trinityag01@gmail.com" style="color: #cbd5e1; text-decoration: none;">Fale Conosco</a>
+</p>
+</div>
+</footer>
+
+<script>
+        lucide.createIcons();
+
+        function startTimer() {
+            const hoursEl = document.getElementById("timer-hours");
+            const minutesEl = document.getElementById("timer-minutes");
+            const secondsEl = document.getElementById("timer-seconds");
+
+            if (!hoursEl || !minutesEl || !secondsEl) return;
+
+            let hours = parseInt(hoursEl.innerText, 10);
+            let minutes = parseInt(minutesEl.innerText, 10);
+            let seconds = parseInt(secondsEl.innerText, 10);
+
+            let totalSeconds = (hours * 3600) + (minutes * 60) + seconds;
+
+            const timerInterval = setInterval(() => {
+                if (totalSeconds <= 0) {
+                    clearInterval(timerInterval);
+                    return;
+                }
+
+                totalSeconds--;
+                let h = Math.floor(totalSeconds / 3600);
+                let m = Math.floor((totalSeconds % 3600) / 60);
+                let s = totalSeconds % 60;
+
+                hoursEl.innerText = String(h).padStart(2, '0');
+                minutesEl.innerText = String(m).padStart(2, '0');
+                secondsEl.innerText = String(s).padStart(2, '0');
+            }, 1000);
+        }
+        startTimer();
+    </script>
+</body>
+</html>
+
+

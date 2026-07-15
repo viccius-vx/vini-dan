@@ -1,0 +1,25 @@
+name: Deploy via FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Obter código do repositório
+        uses: actions/checkout@v4
+      
+      - name: 📂 Sincronizar arquivos para FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          server-dir: public/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**

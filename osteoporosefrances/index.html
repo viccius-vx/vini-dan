@@ -1,0 +1,1035 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guide des Os Forts</title>
+
+<!-- UTMify Tracker -->
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+
+<!-- UTMify Pixel -->
+<script>
+  window.pixelId = "6a235032bef30f331a4be335";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+<link href="data:," rel="icon"/>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary: #DAA761; /* Very dark navy blue */
+    --bg-dark: #DAA761;
+    --bg-darker: #B0834B;
+    --red-alert: #ef4444; 
+    --red-alert-dark: #b91c1c;
+    --text-main: #f8fafc; /* White/very light gray for dark bg */
+    --text-muted: #374151;
+    --bg-light: #ffffff; /* For cards/testimonials */
+    --accent-gold: #f59e0b;
+    --accent-gold-hover: #d97706;
+    --green-check: #22c55e;
+    --dark: #DAA761;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Extremely readable body text */
+    color: var(--text-main);
+    background-color: var(--bg-dark);
+    line-height: 1.65;
+    font-size: 1.15rem; /* Standardizing easy-to-read body size */
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center { text-align: center; }
+.text-primary { color: var(--text-main); }
+.font-heading { font-family: 'Montserrat', sans-serif; }
+.bold { font-weight: 700; }
+.italic { font-style: italic; }
+.mt-1 { margin-top: 1.5rem; }
+.mt-2 { margin-top: 2.5rem; }
+.mt-3 { margin-top: 4rem; }
+.mb-1 { margin-bottom: 1.5rem; }
+.mb-2 { margin-bottom: 2.5rem; }
+.hidden { display: none !important; }
+
+/* ================== STICKY COUNTDOWN ================== */
+.top-warning-bar {
+    background-color: var(--red-alert);
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 1.15rem;
+    font-weight: 800;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    letter-spacing: 0.5px;
+}
+
+.warning-text {
+    margin-bottom: 6px;
+    display: block;
+}
+
+.countdown-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.time-unit {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-label {
+    font-size: 0.75rem;
+    margin-top: 4px;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.time-card {
+    background: #fff;
+    color: #000;
+    font-weight: 900;
+    font-size: 1.4rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
+}
+
+.time-sep {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: -18px; /* Offset to center vertically with numbers */
+}
+
+/* ================== HERO / HEADLINE ================== */
+.hero-section {
+    background-color: var(--bg-dark);
+    padding: 4rem 0 3rem;
+}
+
+.main-headline {
+    font-size: 2.8rem;
+    line-height: 1.25;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.sub-headline {
+    font-size: 1.25rem;
+    color: #374151;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    font-weight: 400;
+}
+
+.hero-main-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    display: block;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* ================== BUY 1 GET 3 ================== */
+.b1g3-title {
+    font-size: 2.3rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-bottom: 0.8rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.b1g3-subtitle {
+    font-size: 1.25rem;
+    color: #f8fafc;
+    margin-bottom: 2rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.b1g3-image-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.b1g3-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.b1g3-prices {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0 10%;
+}
+
+.b1g3-price-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.b1g3-price-strikethrough {
+    color: var(--accent-gold);
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.b1g3-price-final {
+    color: #1a1a1a;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .b1g3-title { font-size: 1.9rem; }
+    .b1g3-subtitle { font-size: 1.15rem; margin-bottom: 1.5rem; }
+    .b1g3-prices { padding: 0 4%; }
+    .b1g3-price-strikethrough { font-size: 1.05rem; }
+    .b1g3-price-final { font-size: 1.35rem; }
+}
+
+/* ================== CALL TO ACTION BOX ================== */
+.cta-box {
+    background: transparent;
+    padding: 1.5rem 0;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-box h3 {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+.star-rating {
+    color: var(--accent-gold);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.price-container {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-container .current-price {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    line-height: 1;
+}
+
+.price-container .savings {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    margin-top: 0.5rem;
+}
+
+.price-container .savings s {
+    color: var(--red-alert);
+}
+
+.price-container .savings strong {
+    color: #1a1a1a;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.btn-buy-now {
+    display: block;
+    width: 100%;
+    background-color: var(--accent-gold);
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.25rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(245, 158, 11, 0.4);
+    transition: all 0.2s ease;
+    border: 3px solid #b45309;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.btn-buy-now:hover {
+    background-color: #fbbf24;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(245, 158, 11, 0.6);
+}
+
+.guarantee-text {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* ================== DEAL INFO SECTIONS ================== */
+.text-section {
+    padding: 4rem 0;
+    background-color: var(--bg-dark);
+}
+
+.text-section h2 {
+    color: #1a1a1a;
+}
+
+.text-section p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #374151;
+}
+
+.divider {
+    height: 1px;
+    background: #334155;
+    max-width: 60%;
+    margin: 3rem auto;
+}
+
+/* ================== HTML BENEFITS CHECKLIST ================== */
+.benefits-section {
+    padding: 4rem 0;
+    background-color: var(--bg-dark);
+}
+
+.benefits-list {
+    list-style: none;
+    max-width: 750px;
+    margin: 2rem auto;
+}
+
+.benefits-list li {
+    font-size: 1.2rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #334155;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    color: #f8fafc;
+}
+
+.benefits-list li:last-child {
+    border-bottom: none;
+}
+
+.benefits-list li i {
+    color: var(--green-check);
+    font-size: 1.6rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* ================== BUNDLE SECTION ================== */
+.bundle-section {
+    padding: 4rem 0;
+    background-color: var(--bg-dark);
+    color: #fff;
+    text-align: center;
+}
+
+.bundle-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.bundle-image {
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+    display: block;
+}
+
+/* ================== TESTIMONIALS ================== */
+.testimonials-section {
+    padding: 4rem 0;
+    background: var(--bg-dark);
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 650px;
+    margin: 0 auto 2rem;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5);
+    color: var(--dark);
+    text-align: left;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #374151;
+}
+
+.testimonial-author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-name {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--dark);
+}
+
+.verified-buyer {
+    font-size: 0.85rem;
+    color: var(--green-check);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.testimonial-stars {
+    color: var(--accent-gold);
+    display: flex;
+    margin-bottom: 0.75rem;
+}
+
+.testimonial-title {
+    font-weight: 800;
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* ================== EXTRA SALES SECTIONS ================== */
+.huge-offer-banner {
+    background-color: var(--bg-dark); 
+    padding: 3rem 1rem;
+    text-align: center;
+    border-top: none; 
+    border-bottom: none;
+}
+
+.huge-offer-title {
+    font-size: 9rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1a1a;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -2px;
+}
+
+.huge-offer-subtitle {
+    font-size: 4.5rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    letter-spacing: -1px;
+}
+
+.transform-section {
+    position: relative;
+    padding: 3rem 20px;
+    background-color: var(--bg-dark);
+    /* In a real scenario, you can add the sunset background image here:
+       background-image: url('images/sunset-bg.jpg');
+       background-size: cover;
+       background-position: center;
+       background-blend-mode: overlay;
+    */
+    color: #1a1a1a;
+    overflow: hidden;
+}
+
+.transform-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #ffc107;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    margin-bottom: 2rem;
+    line-height: 1.15;
+}
+
+.transform-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.transform-image-wrapper {
+    flex: 1;
+    max-width: 500px;
+}
+
+.transform-image-wrapper img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.transform-benefits {
+    flex: 1;
+    list-style: none;
+}
+
+.transform-benefits li {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.transform-benefits li::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #b91c1c;
+    border-radius: 50%;
+    margin-top: 8px;
+    box-shadow: inset -2px -2px 4px rgba(0,0,0,0.5);
+    flex-shrink: 0;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-section, .text-section, .benefits-section, .bundle-section, .testimonials-section {
+        padding: 0.8rem 0 !important;
+    }
+
+    .divider {
+        margin: 1.5rem auto !important;
+    }
+
+    /* Decrease explicit utility margins on mobile */
+    .mt-1 { margin-top: 1rem !important; }
+    .mt-2 { margin-top: 1.5rem !important; }
+    .mt-3 { margin-top: 2rem !important; }
+    .mb-1 { margin-bottom: 1rem !important; }
+    .mb-2 { margin-bottom: 1.5rem !important; }
+    
+    .top-warning-bar {
+        padding: 10px;
+    }
+    .warning-text {
+        font-size: clamp(0.9rem, 4vw, 1.1rem);
+        line-height: 1.3;
+        margin-bottom: 4px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    .time-card {
+        font-size: 1.1rem;
+        padding: 4px 10px;
+    }
+    .time-sep {
+        font-size: 1.1rem;
+        margin-top: -14px;
+    }
+    .time-label {
+        font-size: 0.65rem;
+    }
+
+    .main-headline {
+        font-size: clamp(1.4rem, 6.5vw, 2.1rem);
+        line-height: 1.25;
+        margin-bottom: 1.2rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    
+    .sub-headline {
+        font-size: 1.1rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    
+    .price-container .current-price {
+        font-size: 3.2rem;
+    }
+    
+    .btn-buy-now {
+        font-size: 1.4rem;
+        padding: 1.2rem 1rem;
+    }
+    
+    .text-section p, .benefits-list li {
+        font-size: 1.15rem;
+    }
+    
+    .bundle-section h2 {
+        font-size: 2.2rem;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+    
+    .huge-offer-banner {
+        padding: 1rem 1rem;
+    }
+    
+    .huge-offer-title {
+        font-size: clamp(2rem, 10vw, 4rem);
+        line-height: 1.1;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    
+    .huge-offer-subtitle {
+        font-size: clamp(1.3rem, 5vw, 1.8rem);
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    
+    .transform-title {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .transform-image-wrapper {
+        width: 100%;
+        margin-bottom: -1rem;
+    }
+
+    .transform-image-wrapper img {
+        width: 100%;
+        max-width: 100%;
+        transform: scale(1.05); /* Make the image pop a bit more */
+    }
+    
+    .transform-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .transform-benefits li {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+}
+</style>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<div class="top-warning-bar">
+<div class="warning-text">⏰ DERNIÈRES HEURES : -70% SE TERMINE DANS</div>
+<div class="countdown-box">
+<div class="time-unit">
+<span class="time-card" id="timer-hours">00</span>
+<span class="time-label">hh</span>
+</div>
+<span class="time-sep">:</span>
+<div class="time-unit">
+<span class="time-card" id="timer-minutes">10</span>
+<span class="time-label">mm</span>
+</div>
+<span class="time-sep">:</span>
+<div class="time-unit">
+<span class="time-card" id="timer-seconds">00</span>
+<span class="time-label">ss</span>
+</div>
+</div>
+</div>
+
+<section class="hero-section text-center">
+<div class="container">
+<h1 class="main-headline font-heading bold italic text-primary">
+                Vous inquiétez-vous de l'affaiblissement des os, des fractures ou de la progression de l'ostéoporose ?
+            </h1>
+<p class="sub-headline">
+                Vous n'êtes pas seul, et la vérité est que renforcer votre structure osseuse, prévenir les fractures et retrouver votre équilibre peut être <strong>simple</strong>… lorsque vous suivez une approche étape par étape conçue spécifiquement pour combattre l'ostéoporose.
+            </p>
+
+<!-- <img alt="Guide des Os Forts" class="hero-main-image" src="img1.jpg"/> -->
+
+<div class="cta-box">
+<div class="star-rating">
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+</div>
+<h3>Guide des Os Forts + 2 BONUS</h3>
+<div class="price-container">
+<div class="current-price">19,90 €</div>
+<div class="savings">
+<s>57,90 €</s> <strong>Économisez 70%</strong>
+</div>
+</div>
+<a class="btn-buy-now" href="/cart/58034069438838:1?locale=pt">
+                    ACHETER MAINTENANT 
+                </a>
+<div class="guarantee-text">
+<i data-lucide="shield-check" style="color: #16a34a; width: 16px;"></i>
+                    Paiement 100% sécurisé • Accès numérique instantané
+                </div>
+</div>
+</div>
+</section>
+
+<section class="b1g3-section text-center" style="padding: 4rem 0 0; background-color: var(--bg-dark);">
+<div class="container">
+<h1 class="b1g3-title" style="letter-spacing: -0.5px;">ACHETEZ 1 OBTENEZ 3</h1>
+<p class="b1g3-subtitle">
+                Découvrez ce que vous recevrez pour un temps limité :
+            </p>
+<div class="b1g3-image-container" style="max-width: 900px;">
+<div class="b1g3-prices" style="justify-content: center; padding: 0;">
+<!-- <img alt="Compre 1, leve 3 ofertas" class="b1g3-image" src="img2.jpg" style="width: 100%; max-width: 800px; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.4);"/> -->
+</div>
+</div>
+<div class="divider" style="margin-top: 3.5rem; margin-bottom: 0;"></div>
+</div>
+</section>
+
+<section class="text-section">
+<div class="container">
+<div class="text-center">
+<h2 class="font-heading bold italic" style="font-size: 2.4rem; margin-bottom: 2rem;">Pourquoi offrons-nous cette opportunité ?</h2>
+</div>
+<div style="max-width: 750px; margin: 0 auto; line-height: 1.8;">
+<p>Il est rare que nos trois guides les plus recherchés soient proposés ensemble pour le prix d'un seul.</p>
+<p>La raison en est : une fois par an, lors de notre campagne annuelle de bien-être, nous réduisons les prix de nos matériels essentiels pour aider un maximum de personnes à soulager leurs douleurs et transformer leur vie.</p>
+<p>En supprimant les intermédiaires et en diffusant les contenus de manière 100% numérique, nous évitons des coûts énormes. Nous vous faisons profiter de ces économies en vous proposant le package complet pour 57,90 € pour seulement 19,90 €.</p>
+<p class="bold" style="color: var(--red-alert);">Lorsque l'événement prendra fin, les prix reviendront à la normale.</p>
+</div>
+<div class="divider"></div>
+<div class="text-center">
+<h2 class="font-heading bold italic text-primary" style="font-size: 2.2rem; margin-bottom: 2rem;">"N'est-ce pas trop difficile ou dangereux pour mes os ?"</h2>
+</div>
+<div style="max-width: 750px; margin: 0 auto; line-height: 1.8;">
+<p>Beaucoup de gens pensent que les traitements de l'ostéoporose ne reposent que sur des médicaments puissants... ou pensent que les exercices sont dangereux.</p>
+<p class="bold">❌ Mais ce n'est tout simplement pas vrai.</p>
+<p>Des études médicales prouvent qu'une nutrition ciblée et des exercices spécifiques à faible impact comptent parmi les stratégies les plus efficaces pour prévenir la perte osseuse. Ils améliorent considérablement la densité osseuse et votre équilibre, vous permettant de conserver votre indépendance et d'éloigner le risque de chutes.</p>
+<p>C'est pourquoi le <strong style="color:#1a1a1a;">Pack Guide des Os Forts</strong> a été créé : un système sûr qui vous apprend étape par étape comment nourrir et renforcer vos os, améliorer votre équilibre et vivre de manière plus sécurisée, avec des instructions claires et faciles à appliquer.</p>
+<p>Ce pack complet élimine les doutes et vous aide à passer de la peur des fractures à une vie de force et de confiance, selon vos propres termes.</p>
+</div>
+</div>
+</section>
+
+<section class="benefits-section">
+<div class="container">
+<h2 class="text-center font-heading bold italic" style="font-size: 2.2rem; margin-bottom: 2.5rem; color: #1a1a1a;">
+                📚 Ce que vous trouverez exactement dans le Pack Os Forts :
+            </h2>
+<ul class="benefits-list">
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Guide des Os Forts</strong> avec des stratégies complètes pour prévenir l'ostéoporose et vivre avec plus de force</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Des exercices sûrs</strong> axés sur le renforcement des os, l'amélioration de la posture et de l'équilibre</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Des recettes riches en calcium et en vitamine D</strong> conçues pour la nutrition complète de votre structure osseuse</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Des explications claires</strong> sur les causes de la perte osseuse et comment protéger votre santé au quotidien</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Une approche pratique, étape par étape,</strong> pour que tout le monde, quel que soit son âge, puisse suivre en toute sécurité.</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Des méthodes basées sur la science</strong> pour augmenter naturellement la densité osseuse</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Facile à lire et à appliquer</strong>, vous permettant de commencer à ressentir un soulagement immédiatement</span>
+</li>
+</ul>
+</div>
+</section>
+
+<section class="transform-section" style="padding: 1rem 0;">
+<div class="container">
+<div class="transform-grid text-center">
+<div class="transform-image-wrapper" style="width: 100%; max-width: 800px; margin: 0 auto;">
+<!-- <img alt="Kit Completo" src="img3.jpg" style="width: 100%; border-radius: 8px;"/> -->
+</div>
+</div>
+</div>
+</section>
+
+<section class="huge-offer-banner">
+<div class="container">
+<div class="huge-offer-title">70% DE DESCONTO</div>
+<div class="huge-offer-subtitle">
+                TERMINA HOJE 
+                <i data-lucide="corner-right-down" style="width: 48px; height: 48px; stroke-width: 3px;"></i>
+</div>
+</div>
+</section>
+
+<section class="bundle-section" style="padding-top: 2rem;">
+<div class="container">
+<!-- <img alt="Pacote de Guias" class="bundle-image" src="img1.jpg" style="width: 100%; max-width: 700px; margin: 0 auto;"/> -->
+<div class="cta-box" style="margin-top: 1rem;">
+<div class="star-rating">
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+</div>
+<h3>Guide des Os Forts + 2 BONUS</h3>
+<div class="price-container">
+<div class="current-price">19,90 €</div>
+<div class="savings">
+<s>57,90 €</s> <strong>Économisez 70%</strong>
+</div>
+</div>
+<a class="btn-buy-now" href="/cart/58034069438838:1?locale=pt">
+                    ACHETER MAINTENANT 
+                </a>
+</div>
+</div>
+</section>
+
+<section class="text-section text-center">
+<div class="container">
+<div style="max-width: 800px; margin: 0 auto; line-height: 1.8;">
+<p>Proteger sua mobilidade e independência nunca foi tão acessível.</p>
+<p>Avec cette collection, vous recevrez tous les outils nécessaires pour retrouver votre sécurité, renforcer vos os et combattre l'ostéoporose dans le confort de votre maison. Normalement au prix de 57,90 €, aujourd'hui, vous pouvez obtenir le pack complet pour seulement 19,90 €, c'est-à-dire avec <strong>70 % DE RÉDUCTION</strong>.</p>
+<p>Ne laissez pas passer un autre jour à souffrir de douleurs et de limitations. Prenez en main votre santé physique dès aujourd'hui. Accès numérique immédiat (après confirmation du paiement, vous recevrez un accès direct pour télécharger vos guides).</p>
+<div class="conversion-highlight-box" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.02)); border: 2px dashed var(--accent-gold); border-radius: 12px; padding: 2rem 1.5rem; margin: 3rem auto 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+<h3 class="font-heading bold italic" style="font-size: 2.2rem; margin-bottom: 0.8rem; color: var(--accent-gold);">
+                        Pourquoi attendre un jour de plus ?
+                    </h3>
+<p style="font-size: 1.3rem; line-height: 1.6; margin-bottom: 1.5rem; color: #f8fafc; font-weight: 600;">
+<span style="font-size: 1.4rem;">👉</span> Offrez à votre corps la nutrition et les mouvements fortifiants dont il a si désespérément besoin pour se sentir à nouveau en sécurité et structuré.
+                    </p>
+<a class="bold italic" href="/cart/58034069438838:1?locale=pt" style="font-size: 1.5rem; color: #1a1a1a; background: var(--red-alert); display: inline-block; padding: 12px 24px; border-radius: 6px; box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4); text-decoration: none; width: 100%; max-width: 450px;">
+                        Profitez de votre remise de 70% avant l'expiration de cette offre !
+                    </a>
+</div>
+</div>
+<div class="divider"></div>
+<h2 class="font-serif bold italic mt-3 mb-2" style="font-size: 2.2rem; color: #1a1a1a;">Ce que nos clients disent :</h2>
+
+<div class="testimonials-grid">
+<div class="testimonial-card">
+<div class="testimonial-header">
+<div class="testimonial-author-info">
+<span class="testimonial-name">Carmen G.</span>
+<span class="verified-buyer">
+<i data-lucide="check-circle" style="width: 14px;"></i> Acheteur Vérifié
+                            </span>
+</div>
+</div>
+<div class="testimonial-stars">
+<i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+</div>
+<div class="testimonial-title">“Gostaria de ter encontrado isso anos atrás!”</div>
+<div class="testimonial-text">“Avant de commencer ce programme, je vivais avec la peur constante de tomber et de me fracturer un os. Les routines sont très simples et sûres. J'ai enfin l'impression d'avoir retrouvé mon équilibre et je peux jouer avec mes petits-enfants sans cette inquiétude constante !”</div>
+</div>
+
+<div class="testimonial-card">
+<div class="testimonial-header">
+<div class="testimonial-author-info">
+<span class="testimonial-name">Carlos M.</span>
+<span class="verified-buyer">
+<i data-lucide="check-circle" style="width: 14px;"></i> Acheteur Vérifié
+                            </span>
+</div>
+</div>
+<div class="testimonial-stars">
+<i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+</div>
+<div class="testimonial-title">“Meilleur investissement pour ma santé.”</div>
+<div class="testimonial-text">“J'étais sceptique au début, pensant que seul le calcium de pharmacie résoudrait mon ostéopénie, mais les guides étape par étape sont étonnamment clairs. Ma force musculaire et mon équilibre se sont beaucoup améliorés après peu de temps.”</div>
+</div>
+
+<div class="testimonial-card">
+<div class="testimonial-header">
+<div class="testimonial-author-info">
+<span class="testimonial-name">Ana e Manuel F.</span>
+<span class="verified-buyer">
+<i data-lucide="check-circle" style="width: 14px;"></i> Acheteurs Vérifiés
+                            </span>
+</div>
+</div>
+<div class="testimonial-stars">
+<i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+</div>
+<div class="testimonial-title">“Nous le lisons et l'appliquons ensemble.”</div>
+<div class="testimonial-text">“J'ai commencé à utiliser le Guide des Os Forts et les conseils alimentaires sont formidables. Maintenant, je me sens beaucoup plus en confiance dans mon quotidien, avec beaucoup plus de force pour accomplir les tâches ménagères. Je le recommande à tout le monde !”</div>
+</div>
+
+<div class="testimonial-card">
+<div class="testimonial-header">
+<div class="testimonial-author-info">
+<span class="testimonial-name">Laura S.</span>
+<span class="verified-buyer">
+<i data-lucide="check-circle" style="width: 14px;"></i> Acheteur Vérifié
+                            </span>
+</div>
+</div>
+<div class="testimonial-stars">
+<i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+</div>
+<div class="testimonial-title">“Facile à suivre et change vraiment la vie.”</div>
+<div class="testimonial-text">“Les guides sont extrêmement bien expliqués ! La différence dans ma posture et ma sécurité en marchant a été immense. Je me sens beaucoup plus énergique, forte et avec une qualité de vie bien supérieure.”</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer class="landing-footer" style="background: #1e293b; color: #94a3b8; text-align: center; padding: 2.5rem 1rem; font-size: 0.9rem;">
+<div class="container">
+<h4 class="font-serif bold mb-1" style="color: #374151; font-size: 1.2rem;">Guide des Os Forts</h4>
+<p>© Tous droits réservés.</p>
+<p style="margin-top: 1rem;">
+<a href="mailto:trinityag01@gmail.com" style="color: #374151; text-decoration: none;">Contactez-nous</a>
+</p>
+</div>
+</footer>
+
+<script>
+        lucide.createIcons();
+
+        function startTimer() {
+            const hoursEl = document.getElementById("timer-hours");
+            const minutesEl = document.getElementById("timer-minutes");
+            const secondsEl = document.getElementById("timer-seconds");
+
+            if (!hoursEl || !minutesEl || !secondsEl) return;
+
+            let hours = parseInt(hoursEl.innerText, 10);
+            let minutes = parseInt(minutesEl.innerText, 10);
+            let seconds = parseInt(secondsEl.innerText, 10);
+
+            let totalSeconds = (hours * 3600) + (minutes * 60) + seconds;
+
+            const timerInterval = setInterval(() => {
+                if (totalSeconds <= 0) {
+                    clearInterval(timerInterval);
+                    return;
+                }
+
+                totalSeconds--;
+                let h = Math.floor(totalSeconds / 3600);
+                let m = Math.floor((totalSeconds % 3600) / 60);
+                let s = totalSeconds % 60;
+
+                hoursEl.innerText = String(h).padStart(2, '0');
+                minutesEl.innerText = String(m).padStart(2, '0');
+                secondsEl.innerText = String(s).padStart(2, '0');
+            }, 1000);
+        }
+        startTimer();
+    </script>
+</body>
+</html>
+
+
+
+
