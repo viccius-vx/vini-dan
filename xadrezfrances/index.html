@@ -8,6 +8,109 @@
 <link href="data:," rel="icon"/>
 
 <style>
+/* ADDITIONAL SPECIFICITY OVERRIDES TO SECURE IDENTICAL DESIGN */
+.cta-box h3,
+.b1g3-title,
+.bundle-section h2,
+.text-section h2,
+.testimonials-section h2,
+.transform-title,
+.huge-offer-title,
+.huge-offer-subtitle {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 900 !important;
+}
+.testimonial-title,
+.testimonial-name,
+.verified-buyer,
+.testimonial-text {
+    font-family: 'Inter', sans-serif !important;
+}
+.testimonial-title {
+    font-weight: 800 !important;
+}
+.testimonial-name {
+    font-weight: 800 !important;
+}
+
+/* FORCE ROOT FONT SIZE & SPECIFICITY OVERRIDES */
+html {
+    font-size: 16px !important;
+}
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+.font-heading {
+    font-family: 'Montserrat', sans-serif !important;
+}
+.bold {
+    font-weight: 800 !important;
+}
+.italic {
+    font-style: italic !important;
+}
+.text-primary {
+    color: #ffffff !important;
+}
+.main-headline {
+    font-size: 2.8rem !important;
+    line-height: 1.25 !important;
+    color: #ffffff !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 800 !important;
+    font-style: italic !important;
+}
+.sub-headline {
+    font-size: 1.25rem !important;
+    color: #cbd5e1 !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* RESET SHOPIFY WRAPPER FOR LANDING PAGE (AVOID SHRUNK LAYOUT & WHITE BARS) */
+.shopify-section:has(.top-warning-bar),
+.shopify-section:has(.hero-section),
+.shopify-section:has(.top-warning-bar) > div,
+.shopify-section:has(.top-warning-bar) .page-width,
+.shopify-section:has(.top-warning-bar) .gradient,
+.shopify-section:has(.top-warning-bar) [class*="-padding"] {
+    max-width: none !important;
+    width: 100% !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+body:has(.top-warning-bar) #MainContent,
+body:has(.top-warning-bar) .main-content {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+/* HIDE SHOPIFY HEADER & FOOTER */
+#shopify-section-header,
+#shopify-section-footer,
+.shopify-section-group-header-group,
+.shopify-section-group-footer-group,
+.site-header,
+.site-footer,
+#header,
+#footer,
+.announcement-bar,
+#shopify-section-announcement-bar,
+header.site-header,
+footer.site-footer {
+    display: none !important;
+}
+footer.landing-footer {
+    display: block !important;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 :root {
@@ -756,7 +859,7 @@ src="https://www.facebook.com/tr?id=957806293975840&ev=PageView&noscript=1"
                 La vérité est que maîtriser les échecs et améliorer votre logique peut être <strong>simple</strong>… lorsque vous suivez une méthode pas à pas conçue spécialement pour les débutants.
             </p>
 
-<img alt="Les Échecs à Partir de Zéro" class="hero-main-image" src="img1.jpg"/>
+<img alt="Les Échecs à Partir de Zéro" class="hero-main-image" src="{{ 'img1.jpg' | file_url }}"/>
 
 <div class="cta-box">
 <div class="star-rating">
@@ -792,7 +895,7 @@ src="https://www.facebook.com/tr?id=957806293975840&ev=PageView&noscript=1"
             </p>
 <div class="b1g3-image-container" style="max-width: 900px;">
 <div class="b1g3-prices" style="justify-content: center; padding: 0;">
-<img alt="Compre 1, leve 3 ofertas" class="b1g3-image" src="img2.jpg" style="width: 100%; max-width: 800px; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.4);"/>
+<img alt="Compre 1, leve 3 ofertas" class="b1g3-image" src="{{ 'img2.jpg' | file_url }}" style="width: 100%; max-width: 800px; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.4);"/>
 </div>
 </div>
 <div class="divider" style="margin-top: 3.5rem; margin-bottom: 0;"></div>
@@ -866,7 +969,7 @@ src="https://www.facebook.com/tr?id=957806293975840&ev=PageView&noscript=1"
 <div class="container">
 <div class="transform-grid text-center">
 <div class="transform-image-wrapper" style="width: 100%; max-width: 800px; margin: 0 auto;">
-<img alt="Kit Completo" src="img3.jpg" style="width: 100%; border-radius: 8px;"/>
+<img alt="Kit Completo" src="{{ 'img3.jpg' | file_url }}" style="width: 100%; border-radius: 8px;"/>
 </div>
 </div>
 </div>
@@ -884,7 +987,7 @@ src="https://www.facebook.com/tr?id=957806293975840&ev=PageView&noscript=1"
 
 <section class="bundle-section" style="padding-top: 2rem;">
 <div class="container">
-<img alt="Pacote de Guias" class="bundle-image" src="img1.jpg" style="width: 100%; max-width: 700px; margin: 0 auto;"/>
+<img alt="Pacote de Guias" class="bundle-image" src="{{ 'img1.jpg' | file_url }}" style="width: 100%; max-width: 700px; margin: 0 auto;"/>
 <div class="cta-box" style="margin-top: 1rem;">
 <div class="star-rating">
 <i data-lucide="star" fill="currentColor"></i>
@@ -1043,6 +1146,7 @@ src="https://www.facebook.com/tr?id=957806293975840&ev=PageView&noscript=1"
     </script>
 </body>
 </html>
+
 
 
 
