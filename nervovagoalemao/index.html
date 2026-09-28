@@ -1,0 +1,1099 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vagusnerv Balance – Mehr Ruhe für Ihr Nervensystem</title>
+
+<link href="data:," rel="icon"/>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary: #63142F;
+    --bg-dark: #63142F;
+    --bg-darker: #431020;
+    --red-alert: #ef4444; 
+    --red-alert-dark: #b91c1c;
+    --text-main: #f8fafc; /* White/very light gray for dark bg */
+    --text-muted: #cbd5e1;
+    --bg-light: #ffffff; /* For cards/testimonials */
+    --accent-gold: #f59e0b;
+    --accent-gold-hover: #d97706;
+    --green-check: #22c55e;
+    --dark: #63142F;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Extremely readable body text */
+    color: var(--text-main);
+    background-color: var(--bg-dark);
+    line-height: 1.65;
+    font-size: 1.15rem; /* Standardizing easy-to-read body size */
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center { text-align: center; }
+.text-primary { color: var(--text-main); }
+.font-heading { font-family: 'Montserrat', sans-serif; }
+.bold { font-weight: 700; }
+.italic { font-style: italic; }
+.mt-1 { margin-top: 1.5rem; }
+.mt-2 { margin-top: 2.5rem; }
+.mt-3 { margin-top: 4rem; }
+.mb-1 { margin-bottom: 1.5rem; }
+.mb-2 { margin-bottom: 2.5rem; }
+.hidden { display: none !important; }
+
+/* ================== STICKY COUNTDOWN ================== */
+.top-warning-bar {
+    background-color: var(--red-alert);
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 1.15rem;
+    font-weight: 800;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    letter-spacing: 0.5px;
+}
+
+.warning-text {
+    margin-bottom: 6px;
+    display: block;
+}
+
+.countdown-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.time-unit {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-label {
+    font-size: 0.75rem;
+    margin-top: 4px;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.time-card {
+    background: #fff;
+    color: #000;
+    font-weight: 900;
+    font-size: 1.4rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
+}
+
+.time-sep {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: -18px; /* Offset to center vertically with numbers */
+}
+
+/* ================== HERO / HEADLINE ================== */
+.hero-section {
+    background-color: var(--bg-dark);
+    padding: 4rem 0 3rem;
+}
+
+.main-headline {
+    font-size: 2.8rem;
+    line-height: 1.25;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.sub-headline {
+    font-size: 1.25rem;
+    color: #cbd5e1;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    font-weight: 400;
+}
+
+.hero-main-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    display: block;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* ================== IMAGE PLACEHOLDERS ================== */
+.image-placeholder {
+    width: 100%;
+    max-width: 800px;
+    min-height: 360px;
+    margin: 0 auto 2.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #cbd5e1;
+    background: #132d27;
+    border: 2px dashed #64748b;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    text-align: center;
+}
+
+.image-placeholder strong {
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+.image-placeholder span {
+    font-size: 0.95rem;
+}
+
+/* ================== BUY 1 GET 3 ================== */
+.b1g3-title {
+    font-size: 2.3rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.b1g3-subtitle {
+    font-size: 1.25rem;
+    color: #f8fafc;
+    margin-bottom: 2rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.b1g3-image-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.b1g3-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.b1g3-prices {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0 10%;
+}
+
+.b1g3-price-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.b1g3-price-strikethrough {
+    color: var(--accent-gold);
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.b1g3-price-final {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .b1g3-title { font-size: 1.9rem; }
+    .b1g3-subtitle { font-size: 1.15rem; margin-bottom: 1.5rem; }
+    .b1g3-prices { padding: 0 4%; }
+    .b1g3-price-strikethrough { font-size: 1.05rem; }
+    .b1g3-price-final { font-size: 1.35rem; }
+}
+
+/* ================== CALL TO ACTION BOX ================== */
+.cta-box {
+    background: transparent;
+    padding: 1.5rem 0;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-box h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+.star-rating {
+    color: var(--accent-gold);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.price-container {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-container .current-price {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.price-container .savings {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    margin-top: 0.5rem;
+}
+
+.price-container .savings s {
+    color: var(--red-alert);
+}
+
+.price-container .savings strong {
+    color: #ffffff;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.btn-buy-now {
+    display: block;
+    width: 100%;
+    background-color: var(--accent-gold);
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.25rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(245, 158, 11, 0.4);
+    transition: all 0.2s ease;
+    border: 3px solid #b45309;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.btn-buy-now:hover {
+    background-color: #fbbf24;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(245, 158, 11, 0.6);
+}
+
+.guarantee-text {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* ================== DEAL INFO SECTIONS ================== */
+.text-section {
+    padding: 4rem 0;
+    background-color: var(--bg-dark);
+}
+
+.text-section h2 {
+    color: #ffffff;
+}
+
+.text-section p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #cbd5e1;
+}
+
+.divider {
+    height: 1px;
+    background: #8a3651;
+    max-width: 60%;
+    margin: 3rem auto;
+}
+
+/* ================== HTML BENEFITS CHECKLIST ================== */
+.benefits-section {
+    padding: 4rem 0;
+    background-color: var(--bg-dark);
+}
+
+.benefits-list {
+    list-style: none;
+    max-width: 750px;
+    margin: 2rem auto;
+}
+
+.benefits-list li {
+    font-size: 1.2rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #8a3651;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    color: #f8fafc;
+}
+
+.benefits-list li:last-child {
+    border-bottom: none;
+}
+
+.benefits-list li i {
+    color: var(--green-check);
+    font-size: 1.6rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* ================== BUNDLE SECTION ================== */
+.bundle-section {
+    padding: 4rem 0;
+    background-color: var(--bg-dark);
+    color: #fff;
+    text-align: center;
+}
+
+.bundle-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.bundle-image {
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+    display: block;
+}
+
+/* ================== TESTIMONIALS ================== */
+.testimonials-section {
+    padding: 4rem 0;
+    background: var(--bg-dark);
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 650px;
+    margin: 0 auto 2rem;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5);
+    color: var(--dark);
+    text-align: left;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #cbd5e1;
+}
+
+.testimonial-author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-name {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--dark);
+}
+
+.verified-buyer {
+    font-size: 0.85rem;
+    color: var(--green-check);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.testimonial-stars {
+    color: var(--accent-gold);
+    display: flex;
+    margin-bottom: 0.75rem;
+}
+
+.testimonial-title {
+    font-weight: 800;
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* ================== EXTRA SALES SECTIONS ================== */
+.huge-offer-banner {
+    background-color: var(--bg-dark); 
+    padding: 3rem 1rem;
+    text-align: center;
+    border-top: none; 
+    border-bottom: none;
+}
+
+.huge-offer-title {
+    font-size: 9rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -2px;
+}
+
+.huge-offer-subtitle {
+    font-size: 4.5rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    letter-spacing: -1px;
+}
+
+.transform-section {
+    position: relative;
+    padding: 3rem 20px;
+    background-color: var(--bg-dark);
+    /* In a real scenario, you can add the sunset background image here:
+       background-image: url('images/sunset-bg.jpg');
+       background-size: cover;
+       background-position: center;
+       background-blend-mode: overlay;
+    */
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.transform-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #ffc107;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    margin-bottom: 2rem;
+    line-height: 1.15;
+}
+
+.transform-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.transform-image-wrapper {
+    flex: 1;
+    max-width: 500px;
+}
+
+.transform-image-wrapper img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.transform-benefits {
+    flex: 1;
+    list-style: none;
+}
+
+.transform-benefits li {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.transform-benefits li::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #b91c1c;
+    border-radius: 50%;
+    margin-top: 8px;
+    box-shadow: inset -2px -2px 4px rgba(0,0,0,0.5);
+    flex-shrink: 0;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-section, .text-section, .benefits-section, .bundle-section, .testimonials-section {
+        padding: 0.8rem 0 !important;
+    }
+
+    .divider {
+        margin: 1.5rem auto !important;
+    }
+
+    /* Decrease explicit utility margins on mobile */
+    .mt-1 { margin-top: 1rem !important; }
+    .mt-2 { margin-top: 1.5rem !important; }
+    .mt-3 { margin-top: 2rem !important; }
+    .mb-1 { margin-bottom: 1rem !important; }
+    .mb-2 { margin-bottom: 1.5rem !important; }
+    
+    .top-warning-bar {
+        padding: 10px;
+    }
+    .warning-text {
+        font-size: clamp(0.9rem, 4vw, 1.1rem);
+        line-height: 1.3;
+        margin-bottom: 4px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    .time-card {
+        font-size: 1.1rem;
+        padding: 4px 10px;
+    }
+    .time-sep {
+        font-size: 1.1rem;
+        margin-top: -14px;
+    }
+    .time-label {
+        font-size: 0.65rem;
+    }
+
+    .main-headline {
+        font-size: clamp(1.4rem, 6.5vw, 2.1rem);
+        line-height: 1.25;
+        margin-bottom: 1.2rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    
+    .sub-headline {
+        font-size: 1.1rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    
+    .price-container .current-price {
+        font-size: 3.2rem;
+    }
+    
+    .btn-buy-now {
+        font-size: 1.4rem;
+        padding: 1.2rem 1rem;
+    }
+    
+    .text-section p, .benefits-list li {
+        font-size: 1.15rem;
+    }
+    
+    .bundle-section h2 {
+        font-size: 2.2rem;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+    
+    .huge-offer-banner {
+        padding: 1rem 1rem;
+    }
+    
+    .huge-offer-title {
+        font-size: clamp(2rem, 10vw, 4rem);
+        line-height: 1.1;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    
+    .huge-offer-subtitle {
+        font-size: clamp(1.3rem, 5vw, 1.8rem);
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    
+    .transform-title {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .transform-image-wrapper {
+        width: 100%;
+        margin-bottom: -1rem;
+    }
+
+    .transform-image-wrapper img {
+        width: 100%;
+        max-width: 100%;
+        transform: scale(1.05); /* Make the image pop a bit more */
+    }
+    
+    .transform-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .transform-benefits li {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .image-placeholder {
+        min-height: 240px;
+        padding: 1.25rem;
+    }
+}
+</style>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '957806293975840');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=957806293975840&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- UTMify Scripts -->
+<script>
+  window.pixelId = "6a5f802e1385a750bfc6170a";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+</head>
+
+<body>
+
+<div class="top-warning-bar">
+<div class="warning-text">⏰ NUR NOCH KURZE ZEIT: 70% RABATT ENDET IN</div>
+<div class="countdown-box">
+<div class="time-unit">
+<span class="time-card" id="timer-hours">00</span>
+<span class="time-label">hh</span>
+</div>
+<span class="time-sep">:</span>
+<div class="time-unit">
+<span class="time-card" id="timer-minutes">10</span>
+<span class="time-label">mm</span>
+</div>
+<span class="time-sep">:</span>
+<div class="time-unit">
+<span class="time-card" id="timer-seconds">00</span>
+<span class="time-label">ss</span>
+</div>
+</div>
+</div>
+
+<section class="hero-section text-center">
+<div class="container">
+<h1 class="main-headline font-heading bold italic text-primary">
+                Sind Sie es leid, sich ängstlich, überfordert oder ständig wie „auf Kohlen“ zu fühlen – obwohl nach außen alles in Ordnung scheint?
+            </h1>
+<p class="sub-headline">
+                Sie sind weder kaputt noch schwach. Häufig sind diese Empfindungen Anzeichen für einen aus dem Gleichgewicht geratenen Vagusnerv – und wenn Sie diesen Zusammenhang verstehen, ergibt vieles plötzlich Sinn.
+            </p>
+
+<img alt="Vagus Balance Praxis-Handbuch von Alexander Bennet mit zwei Bonusbüchern und 70 Prozent Rabatt" class="hero-main-image" src="imagem1.png"/>
+
+<div class="cta-box">
+<div class="star-rating">
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+</div>
+<h3>Vagusnerv Balance Handbuch + 2 BONI</h3>
+<div class="price-container">
+<div class="current-price">19,90 €</div>
+<div class="savings">
+<s>59,70 €</s> <strong>Sie sparen 70%</strong>
+</div>
+</div>
+<!-- TODO: href durch den Checkout-Link des Vagusnerv-Produkts ersetzen. -->
+<a class="btn-buy-now" href="#checkout-link-eintragen">
+                    JETZT KAUFEN 
+                </a>
+<div class="guarantee-text">
+<i data-lucide="shield-check" style="color: #16a34a; width: 16px;"></i>
+                    100% sichere Zahlung • Sofortiger digitaler Zugriff
+                </div>
+</div>
+</div>
+</section>
+
+<section class="b1g3-section text-center" style="padding: 4rem 0 0; background-color: var(--bg-dark);">
+<div class="container">
+<h1 class="b1g3-title" style="letter-spacing: -0.5px;">1 KAUFEN, 3 ERHALTEN</h1>
+<p class="b1g3-subtitle">
+                Nur für kurze Zeit erhalten Sie Folgendes:
+            </p>
+<div class="b1g3-image-container" style="max-width: 900px;">
+<div class="b1g3-prices" style="justify-content: center; padding: 0;">
+<img alt="Drei Bücher des Vagus Balance Pakets von Alexander Bennet: ein Hauptbuch und zwei kostenlose Bonusbücher" class="b1g3-image" src="imagem2.png" style="width: 100%; max-width: 800px; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.4);"/>
+</div>
+</div>
+<div class="divider" style="margin-top: 3.5rem; margin-bottom: 0;"></div>
+</div>
+</section>
+
+<section class="text-section">
+<div class="container">
+<div class="text-center">
+<h2 class="font-heading bold italic" style="font-size: 2.4rem; margin-bottom: 2rem;">Warum klingt dieses Angebot beinahe zu gut, um wahr zu sein?</h2>
+</div>
+<div style="max-width: 750px; margin: 0 auto; line-height: 1.8;">
+<p>Wir verstehen Ihre Skepsis – schließlich bekommt man drei beliebte Ratgeber nicht jeden Tag zum Preis von einem.</p>
+<p>Die Erklärung ist einfach: Einmal im Jahr veranstalten wir ein besonderes Leser-Event. Damit bedanken wir uns bei unserer Community und machen unsere gefragtesten Sammlungen leichter zugänglich.</p>
+<p>Weil wir die Inhalte digital und ohne klassische Einzelhandelsaufschläge anbieten, können wir das komplette Paket statt für 59,70 € vorübergehend für nur 19,90 € bereitstellen.</p>
+<p class="bold" style="color: var(--red-alert);">Nach dem Ende dieser Aktion gelten wieder die regulären Preise.</p>
+</div>
+<div class="divider"></div>
+<div class="text-center">
+<h2 class="font-heading bold italic text-primary" style="font-size: 2.2rem; margin-bottom: 2rem;">Die Wahrheit, die viele Menschen nie erfahren</h2>
+</div>
+<div style="max-width: 750px; margin: 0 auto; line-height: 1.8;">
+<p>Stress, Angst, schlechter Schlaf, Gehirnnebel oder emotionale Taubheit entstehen nicht einfach ohne Grund.</p>
+<p class="bold">Es können Signale Ihres Nervensystems sein, das nach Unterstützung verlangt.</p>
+<p>Und die gute Nachricht: Sie benötigen nicht zwangsläufig jahrelange Therapie, kostspielige Geräte oder komplizierte Routinen, um sich besser zu fühlen.</p>
+<p>Positives Denken, Affirmationen und reine Willenskraft reichen oft nicht aus – nicht, weil Sie etwas falsch machen, sondern weil diese Ansätze die mögliche Ursache übersehen: Ihren Vagusnerv.</p>
+<p class="bold">✅ Der körperorientierte Ansatz</p>
+<p>Wenn Sie lernen, Ihren Vagusnerv gezielt zu stimulieren und zu regulieren, kann Ihr Körper leichter vom Kampf-oder-Flucht-Modus in einen Zustand von Ruhe, Sicherheit und Balance wechseln.</p>
+<p>Genau dafür wurde das <strong style="color:#ffffff;">Vagusnerv Balance 3-Bücher-Paket</strong> entwickelt.</p>
+</div>
+</div>
+</section>
+
+<section class="benefits-section">
+<div class="container">
+<h2 class="text-center font-heading bold italic" style="font-size: 2.2rem; margin-bottom: 2.5rem; color: #ffffff;">
+                ⭐ Was dieses Bestseller-Paket für Sie bereithält
+            </h2>
+<p class="text-center" style="max-width: 750px; margin: 0 auto 2rem; color: #cbd5e1; font-size: 1.2rem;">
+                Keine trockene Theorie, sondern ein verständliches, wissenschaftlich orientiertes Schritt-für-Schritt-System, das Sie mit wenigen Minuten täglich zu mehr Ruhe und innerer Sicherheit führen kann.
+            </p>
+<ul class="benefits-list">
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Vagus Nerve Healing Guide</strong> – Eine klare, einsteigerfreundliche Erklärung, wie Ihr Vagusnerv arbeitet und weshalb er mit Stress, Verdauung und emotionaler Regulation verbunden ist</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Vagus Nerve Somatic Exercise</strong> – Sanfte, bewährte Körperübungen, die Ihr Nervensystem rasch beruhigen können – ganz ohne Geräte</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Somatic Exercises for Nervous System Regulation</strong> – Mehr als 100 praktische Übungen, um gespeicherten Stress, belastende Erfahrungen und körperliche Anspannung zu lösen</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Einfache tägliche Routinen</strong>, für die Sie höchstens 10 Minuten benötigen</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Praktische Werkzeuge</strong> für besseren Schlaf, emotionale Widerstandskraft und mehr mentale Klarheit</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Verständliche Techniken</strong>, die sich an Erkenntnissen aus Neurowissenschaft und somatischer Therapie orientieren</span>
+</li>
+<li>
+<i color="#ffffff" data-lucide="check-circle" fill="#22c55e"></i>
+<span><strong>Ein flexibles System</strong>, das Sie überall und jederzeit einsetzen können – sogar in besonders stressigen Augenblicken</span>
+</li>
+</ul>
+</div>
+</section>
+
+<section class="transform-section" style="padding: 1rem 0;">
+<div class="container">
+<div class="transform-grid text-center">
+<div class="transform-image-wrapper" style="width: 100%; max-width: 800px; margin: 0 auto;">
+<img alt="Vagus Balance Programm mit drei Praxisbüchern, somatischen Übungen und täglichen Routinen" src="imagem3.png" style="width: 100%; border-radius: 8px;"/>
+</div>
+</div>
+</div>
+</section>
+
+<section class="huge-offer-banner">
+<div class="container">
+<div class="huge-offer-title">70% RABATT</div>
+<div class="huge-offer-subtitle">
+                ENDET HEUTE 
+                <i data-lucide="corner-right-down" style="width: 48px; height: 48px; stroke-width: 3px;"></i>
+</div>
+</div>
+</section>
+
+<section class="bundle-section" style="padding-top: 2rem;">
+<div class="container">
+<img alt="Vagus Balance Praxis-Handbuch von Alexander Bennet mit zwei Bonusbüchern" class="bundle-image" src="imagem1.png" style="width: 100%; max-width: 700px; margin: 0 auto;"/>
+<div class="cta-box" style="margin-top: 1rem;">
+<div class="star-rating">
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+<i data-lucide="star" fill="currentColor"></i>
+</div>
+<h3>Vagusnerv Balance Handbuch + 2 BONI</h3>
+<div class="price-container">
+<div class="current-price">19,90 €</div>
+<div class="savings">
+<s>59,70 €</s> <strong>Sie sparen 70%</strong>
+</div>
+</div>
+<!-- TODO: href durch den Checkout-Link des Vagusnerv-Produkts ersetzen. -->
+<a class="btn-buy-now" href="#checkout-link-eintragen">
+                    JETZT KAUFEN 
+                </a>
+</div>
+</div>
+</section>
+
+<section class="text-section text-center">
+<div class="container">
+<div style="max-width: 800px; margin: 0 auto; line-height: 1.8;">
+<p>Aktuell erhalten Sie das vollständige Vagusnerv Balance 3-Bücher-Paket mit <strong>70% RABATT</strong>.</p>
+<p>👉 Wenn Sie es satt haben, sich ängstlich, erschöpft, abgeschnitten oder dauerhaft im Überlebensmodus zu fühlen …</p>
+<p>👉 Wenn Sie nach einer Ruhe suchen, die im Körper beginnt und nicht nur in Ihren Gedanken …</p>
+<p>👉 Wenn Sie ein praktisches, bewährtes System möchten, das sich wirklich in Ihren Alltag integrieren lässt …</p>
+<p class="bold">Dann könnte dies genau das sein, wonach Sie gesucht haben.</p>
+<p>Ihr Nervensystem versucht, Ihnen etwas mitzuteilen. Nach bestätigter Zahlung erhalten Sie sofortigen digitalen Zugriff auf die Ratgeber und zusätzlich eine E-Mail mit dem Download-Link.</p>
+<div class="conversion-highlight-box" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.02)); border: 2px dashed var(--accent-gold); border-radius: 12px; padding: 2rem 1.5rem; margin: 3rem auto 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+<h3 class="font-heading bold italic" style="font-size: 2.2rem; margin-bottom: 0.8rem; color: var(--accent-gold);">
+                        Warum länger warten?
+                    </h3>
+<p style="font-size: 1.3rem; line-height: 1.6; margin-bottom: 1.5rem; color: #f8fafc; font-weight: 600;">
+<span style="font-size: 1.4rem;">👉</span> Heute kann der Tag sein, an dem Sie Ihrem Körper wieder zuhören und beginnen, sich Schritt für Schritt wie Sie selbst zu fühlen.
+                    </p>
+<!-- TODO: href durch den Checkout-Link des Vagusnerv-Produkts ersetzen. -->
+<a class="bold italic" href="#checkout-link-eintragen" style="font-size: 1.5rem; color: #ffffff; background: var(--red-alert); display: inline-block; padding: 12px 24px; border-radius: 6px; box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4); text-decoration: none; width: 100%; max-width: 450px;">
+                        Jetzt bestellen und 70% sparen, bevor die Aktion endet!
+                    </a>
+</div>
+</div>
+<div class="divider"></div>
+<h2 class="font-serif bold italic mt-3 mb-2" style="font-size: 2.2rem; color: #ffffff;">Das berichten unsere Leser:</h2>
+
+<div class="testimonials-grid">
+<div class="testimonial-card">
+<div class="testimonial-header">
+<div class="testimonial-author-info">
+<span class="testimonial-name">Julia M.</span>
+<span class="verified-buyer">
+<i data-lucide="check-circle" style="width: 14px;"></i> Verifizierter Käufer
+                            </span>
+</div>
+</div>
+<div class="testimonial-stars">
+<i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+</div>
+<div class="testimonial-title">„Endlich kann ich wieder durchatmen.“</div>
+<div class="testimonial-text">„Jahrelang litt ich unter ständiger Anspannung und innerer Unruhe. Die somatischen Übungen haben mir dabei geholfen, akute Panik schneller zu beruhigen und wieder bewusst durchzuatmen. Für mich war das eine enorme Unterstützung.“</div>
+</div>
+
+<div class="testimonial-card">
+<div class="testimonial-header">
+<div class="testimonial-author-info">
+<span class="testimonial-name">Michael K.</span>
+<span class="verified-buyer">
+<i data-lucide="check-circle" style="width: 14px;"></i> Verifizierter Käufer
+                            </span>
+</div>
+</div>
+<div class="testimonial-stars">
+<i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+</div>
+<div class="testimonial-title">„Meine Nächte sind deutlich ruhiger geworden.“</div>
+<div class="testimonial-text">„Die Anleitungen zur Regulation des Nervensystems sind ausgezeichnet. Seit ich Atem- und Körperübungen täglich anwende, schlafe ich tiefer und starte ohne kreisende Gedanken in den Morgen. Ich spüre, wie mein Stresslevel sinkt.“</div>
+</div>
+
+<div class="testimonial-card">
+<div class="testimonial-header">
+<div class="testimonial-author-info">
+<span class="testimonial-name">Sabine T.</span>
+<span class="verified-buyer">
+<i data-lucide="check-circle" style="width: 14px;"></i> Verifizierte Käuferin
+                            </span>
+</div>
+</div>
+<div class="testimonial-stars">
+<i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+</div>
+<div class="testimonial-title">„Einfach in den Alltag einzubauen.“</div>
+<div class="testimonial-text">„Die Übungen lassen sich problemlos zu Hause oder im Büro durchführen. Schon nach kurzer Zeit merke ich, wie die Spannung in Nacken und Brust nachlässt. Besonders bei einem vollen Alltag sind die kurzen Routinen sehr hilfreich.“</div>
+</div>
+
+<div class="testimonial-card">
+<div class="testimonial-header">
+<div class="testimonial-author-info">
+<span class="testimonial-name">Thomas L.</span>
+<span class="verified-buyer">
+<i data-lucide="check-circle" style="width: 14px;"></i> Verifizierter Käufer
+                            </span>
+</div>
+</div>
+<div class="testimonial-stars">
+<i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+</div>
+<div class="testimonial-title">„Nachvollziehbar erklärt und direkt anwendbar.“</div>
+<div class="testimonial-text">„Das Handbuch erklärt verständlich, wie der Vagusnerv funktioniert und wie man ihn gezielt ansprechen kann, um mehr Ruhe in den Körper zu bringen. Die praktischen Schritte haben meinen Alltag spürbar verbessert.“</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer class="landing-footer" style="background: #431020; color: #cbd5e1; text-align: center; padding: 2.5rem 1rem; font-size: 0.9rem;">
+<div class="container">
+<h4 class="font-serif bold mb-1" style="color: #cbd5e1; font-size: 1.2rem;">Vagusnerv Balance Handbuch</h4>
+<p>© Alle Rechte vorbehalten.</p>
+<p style="margin-top: 1rem;">
+<a href="mailto:trinityag01@gmail.com" style="color: #cbd5e1; text-decoration: none;">Kontaktiere Uns</a>
+</p>
+</div>
+</footer>
+
+<script>
+        lucide.createIcons();
+
+        function startTimer() {
+            const hoursEl = document.getElementById("timer-hours");
+            const minutesEl = document.getElementById("timer-minutes");
+            const secondsEl = document.getElementById("timer-seconds");
+
+            if (!hoursEl || !minutesEl || !secondsEl) return;
+
+            let hours = parseInt(hoursEl.innerText, 10);
+            let minutes = parseInt(minutesEl.innerText, 10);
+            let seconds = parseInt(secondsEl.innerText, 10);
+
+            let totalSeconds = (hours * 3600) + (minutes * 60) + seconds;
+
+            const timerInterval = setInterval(() => {
+                if (totalSeconds <= 0) {
+                    clearInterval(timerInterval);
+                    return;
+                }
+
+                totalSeconds--;
+                let h = Math.floor(totalSeconds / 3600);
+                let m = Math.floor((totalSeconds % 3600) / 60);
+                let s = totalSeconds % 60;
+
+                hoursEl.innerText = String(h).padStart(2, '0');
+                minutesEl.innerText = String(m).padStart(2, '0');
+                secondsEl.innerText = String(s).padStart(2, '0');
+            }, 1000);
+        }
+        startTimer();
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
