@@ -734,12 +734,17 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '957806293975840');
+fbq('init', '978948877799245');
 fbq('track', 'PageView');
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('a[href^="https://pay.hotmart.com/"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      fbq('track', 'InitiateCheckout');
+    });
+  });
+});
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=957806293975840&ev=PageView&noscript=1"
-/></noscript>
 <!-- End Meta Pixel Code -->
 <!-- UTMify Scripts -->
 <script>
@@ -760,6 +765,9 @@ src="https://www.facebook.com/tr?id=957806293975840&ev=PageView&noscript=1"
 </head>
 
 <body>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=978948877799245&ev=PageView&noscript=1"
+/></noscript>
 
 <div class="top-warning-bar">
 <div class="warning-text">⏰ POR TIEMPO LIMITADO: EL 70% DE DESCUENTO TERMINA EN</div>
